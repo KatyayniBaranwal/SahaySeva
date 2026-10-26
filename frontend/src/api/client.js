@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const client = axios.create({ baseURL: '/api' });
+const client = axios.create({ baseURL: 'https://sahayseva.onrender.com/api' });
 
 client.interceptors.request.use((config) => {
   const token = localStorage.getItem('sahayseva_token');
